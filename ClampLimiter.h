@@ -13,6 +13,7 @@ class ClampLimiter
 {
 public:
 	ClampLimiter(float val_min, float val_max);
+	ClampLimiter(float val_max);
 	void set_min(float val);
 	void set_max(float val);
 	float update(float val);

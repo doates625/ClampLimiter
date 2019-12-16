@@ -17,6 +17,16 @@ ClampLimiter::ClampLimiter(float val_min, float val_max)
 }
 
 /**
+ * Constructs symmetric clamp limiter
+ * @param val_max Maximum positive-negative output
+ */
+ClampLimiter::ClampLimiter(float val_max) :
+	ClampLimiter(-val_max, val_max)
+{
+	return;
+}
+
+/**
  * @brief Sets minimum output
  */
 void ClampLimiter::set_min(float val)

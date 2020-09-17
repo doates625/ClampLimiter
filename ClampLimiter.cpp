@@ -27,6 +27,22 @@ ClampLimiter::ClampLimiter(float val_max) :
 }
 
 /**
+ * @return Minimum output
+ */
+float ClampLimiter::get_min()
+{
+	return val_min;
+}
+
+/**
+ * @return Maximum output
+ */
+float ClampLimiter::get_max()
+{
+	return val_max;
+}
+
+/**
  * @brief Sets minimum output
  */
 void ClampLimiter::set_min(float val)
